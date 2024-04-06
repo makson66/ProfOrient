@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header data-aos="fade-down" class="header">
+      <div class="wrapper header-wrapper">
+        <a class="header__logo-link" href="./index.html">
+          <img
+            width="140px"
+            height="100px"
+            src="./assets/img/proforient-high-resolution-logo.png"
+            alt=""
+          />
+        </a>
+        <nav class="header__nav">
+          <a class="header__nav-link" href="./index.html">Главная</a>
+          <a class="header__nav-link" href="./index2.html"
+            >Программирование и специализации</a
+          >
+
+          <a class="header__nav-link-main" href="./index3.html">Образование</a>
+          <a class="header__nav-link" href="./index4.html">Опросы</a>
+        </nav>
+        <div class="header__socials">
+          <a class="header__socials-link" href="#"
+            ><svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="16" cy="16" r="16" fill="#282D36" />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M8.23274 15.8204C12.3933 14.0077 15.1677 12.8126 16.5559 12.2352C20.5194 10.5867 21.343 10.3003 21.8798 10.2908C21.9978 10.2888 22.2618 10.318 22.4328 10.4568C22.5772 10.5739 22.6169 10.7322 22.6359 10.8433C22.655 10.9543 22.6786 11.2074 22.6598 11.4051C22.445 13.6619 21.5157 19.1384 21.0428 21.666C20.8428 22.7355 20.4489 23.0941 20.0675 23.1292C19.2387 23.2055 18.6093 22.5815 17.8066 22.0553C16.5505 21.2319 15.8408 20.7193 14.6215 19.9158C13.2124 18.9872 14.1259 18.4769 14.9289 17.6428C15.1391 17.4245 18.7908 14.103 18.8615 13.8017C18.8704 13.764 18.8786 13.6235 18.7951 13.5493C18.7117 13.4752 18.5885 13.5005 18.4996 13.5207C18.3736 13.5493 16.3669 14.8756 12.4796 17.4997C11.91 17.8908 11.3941 18.0814 10.9318 18.0714C10.4222 18.0604 9.442 17.7833 8.71329 17.5464C7.8195 17.2559 7.10913 17.1023 7.17099 16.6089C7.20321 16.3519 7.55713 16.089 8.23274 15.8204Z"
+                fill="#99ABC1"
+              />
+            </svg>
+          </a>
+          <a class="header__socials-link" href="#">
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="16" cy="16" r="16" fill="#282D36" />
+              <path
+                d="M16.7187 20.98C11.2541 20.98 8.13732 17.2338 8.00745 11H10.7447C10.8346 15.5754 12.8525 17.5135 14.4509 17.9131V11H17.0285V14.946C18.6069 14.7762 20.265 12.978 20.8245 11H23.4019C22.9724 13.4376 21.1742 15.2358 19.8954 15.975C21.1742 16.5744 23.2222 18.1428 24.0014 20.98H21.1642C20.5548 19.0819 19.0364 17.6134 17.0285 17.4136V20.98H16.7187Z"
+                fill="#99ABC1"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="edu">
+        <div class="wrapper edu__wrapper">
+          <h2 class="edu__heading">Поиск вузов</h2>
+          <div class="tab__content">
+            <div class="edu__acardion">
+              <div class="edu__acardion-header">
+                <button class="edu__acardion-btn">
+                  <svg
+                    fill="#7c7c7ca5"
+                    width="15px"
+                    height="15px"
+                    viewBox="0 0 1920 1920"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m.08 568.063 176.13-176.13 783.988 783.864 783.74-783.864 176.129 176.13-959.87 960.118z"
+                      fill-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+
+                <h3 class="edu__acardion-heading">Город</h3>
+              </div>
+              <div class="edu__acardion-content">
+                <button class="tab__btn tab__btn_active">Красноярск</button>
+                <button class="tab__btn">Санкт-Петербург</button>
+                <button class="tab__btn">Москва</button>
+                <button class="tab__btn tab__btn_active">Краснодар</button>
+                <button class="tab__btn">Новосибирск</button>
+                <button class="tab__btn">Пермь</button>
+              </div>
+            </div>
+          </div>
+          <div class="tab__body">
+            <div class="edu__body-marking">
+              <p class="edu__marking-text">Название вуза</p>
+              <div class="edu__marking-group">
+                <p class="edu__marking-text">Стоимость</p>
+                <p class="edu__marking-text">Бюджет</p>
+                <p class="edu__marking-text">Платное</p>
+              </div>
+            </div>
+            <div class="tab__body-item tab__body-item_active">
+              <div class="edu__body-item-list">
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_c1e398b2737e8fd876ed244ccfdd0e35.png"
+                    alt=""
+                  />
+                  <a href="https://www.sfu-kras.ru/" class="edu__card-heading">
+                    Сибирский федеральный университет
+                  </a>
+                  <p class="edu__card-text">от 41298 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 118</p>
+                    <p class="edu__card-l-text">4189 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 120</p>
+                    <p class="edu__card-l-text">1759 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_c1e398b2737e8fd876ed244ccfdd0e35.png"
+                    alt=""
+                  />
+                  <a href="http://www.kgau.ru/" class="edu__card-heading">
+                    Красноярский государственный аграрный университет
+                  </a>
+                  <p class="edu__card-text">от 30436 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 108</p>
+                    <p class="edu__card-l-text">856 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 110</p>
+                    <p class="edu__card-l-text">1 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_c1e398b2737e8fd876ed244ccfdd0e35.png"
+                    alt=""
+                  />
+                  <a
+                    href="https://structure.sfu-kras.ru/lpi"
+                    class="edu__card-heading"
+                  >
+                    Лесосибирский педагогический институт СФУ
+                  </a>
+                  <p class="edu__card-text">от 60132 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 142</p>
+                    <p class="edu__card-l-text">167 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 115</p>
+                    <p class="edu__card-l-text">28 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_865821cac4cb75a0f6cbd29d4d283ecf.png"
+                    alt=""
+                  />
+                  <a href="https://www.sibsau.ru/" class="edu__card-heading">
+                    Сибирский государственный аэрокосмический университет им.
+                    М.Ф.Решетнева
+                  </a>
+                  <p class="edu__card-text">от 53800 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 120</p>
+                    <p class="edu__card-l-text">2377 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 105</p>
+                    <p class="edu__card-l-text">644 мест</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tab__body-item">
+              <div class="tab__body-item-list">
+                <div class="edu__card">
+                  <img
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_c3beb850c4aa7cc5ac57ba7c01fad2e6.png"
+                    alt=""
+                  />
+                  <a href="https://etu.ru/" class="edu__card-heading">
+                    Санкт-Петербургский государственный электротехнический
+                    университет «ЛЭТИ» им. В.И. Ульянова (Ленина)
+                  </a>
+                  <p class="edu__card-text">от 71600 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 193</p>
+                    <p class="edu__card-l-text">1496 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 120</p>
+                    <p class="edu__card-l-text">970 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_58a6bd926728b0a591cad9f14408140e.png"
+                    alt=""
+                  />
+                  <a href="https://www.voenmeh.ru/" class="edu__card-heading">
+                    «Балтийский государственный технический университет
+                    «ВОЕНМЕХ» им. Д.Ф. Устинова»
+                  </a>
+                  <p class="edu__card-text">от 72000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 157</p>
+                    <p class="edu__card-l-text">1269 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 154</p>
+                    <p class="edu__card-l-text">839 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_0f58dd30d1861e08671f9b31a7819bcc.png"
+                    alt=""
+                  />
+                  <a href="https://spmi.ru/" class="edu__card-heading">
+                    Санкт-Петербургский Горный университет
+                  </a>
+                  <p class="edu__card-text">от 600000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 132</p>
+                    <p class="edu__card-l-text">1912 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 118</p>
+                    <p class="edu__card-l-text">598 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_e791c0668e3b2e033593fe5449707a2b.png"
+                    alt=""
+                  />
+                  <a href="https://itmo.ru/" class="edu__card-heading">
+                    Национальный исследовательский университет ИТМО
+                  </a>
+                  <p class="edu__card-text">от 289000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 218</p>
+                    <p class="edu__card-l-text">1384 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 180</p>
+                    <p class="edu__card-l-text">1450 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_41ad5eefb664de6560de5190f2bab59a.png"
+                    alt=""
+                  />
+                  <a href="https://spbu.ru/" class="edu__card-heading">
+                    Санкт-Петербургский государственный университет
+                  </a>
+                  <p class="edu__card-text">от 165500 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 183</p>
+                    <p class="edu__card-l-text">2363 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 116</p>
+                    <p class="edu__card-l-text">2660 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_ac349403547bff5ebc44341f398eff3d.png"
+                    alt=""
+                  />
+                  <a href="https://www.spbstu.ru/" class="edu__card-heading">
+                    Санкт-Петербургский политехнический университет Петра
+                    Великого
+                  </a>
+                  <p class="edu__card-text">от 88000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 162</p>
+                    <p class="edu__card-l-text">3413</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 162</p>
+                    <p class="edu__card-l-text">3914 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_5adcaf5c038cde5699b9b50c1f5ce1e1.png"
+                    alt=""
+                  />
+                  <a href="https://sutd.ru/" class="edu__card-heading">
+                    Санкт-Петербургский государственный университет промышленных
+                    технологий и дизайна
+                  </a>
+                  <p class="edu__card-text">от 70000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 134</p>
+                    <p class="edu__card-l-text">1351</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 120</p>
+                    <p class="edu__card-l-text">6310 мест</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab__body-item">
+              <div class="tab__body-item-list">
+                <div class="edu__card">
+                  <img
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_52785280d1871ada6146da3edef4e87b.png"
+                    alt=""
+                  />
+                  <a href="https://synergy.ru/" class="edu__card-heading"
+                    >Университет Синергия</a
+                  >
+                  <p class="edu__card-text">от 64000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от -</p>
+                    <p class="edu__card-l-text">50 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 185</p>
+                    <p class="edu__card-l-text">42225 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="32px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_9ade1f3c096205487f0685fe3cd9fc30.png"
+                    alt=""
+                  />
+                  <a href="https://mtuci.ru/" class="edu__card-heading">
+                    Московский технический университет связи и информатики
+                  </a>
+                  <p class="edu__card-text">от 80000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 202</p>
+                    <p class="edu__card-l-text">1000 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 150</p>
+                    <p class="edu__card-l-text">2073 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_eccd36629b1acda1b01446e4dd270fd9.png"
+                    alt=""
+                  />
+                  <a href="https://mitu.institute/" class="edu__card-heading">
+                    Московский Институт Технологий и Управления
+                  </a>
+                  <p class="edu__card-text">от 58000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">-</p>
+                    <p class="edu__card-l-text">0 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 110</p>
+                    <p class="edu__card-l-text">58260 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_853c8eb7d07ae0bfb6aca30ecc49f5ab.png"
+                    alt=""
+                  />
+                  <a href="https://mospolytech.ru/" class="edu__card-heading">
+                    Московский политехнический университет
+                  </a>
+                  <p class="edu__card-text">от 100000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 143</p>
+                    <p class="edu__card-l-text">3137 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 112</p>
+                    <p class="edu__card-l-text">3500 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="34px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_10bb33bd97931b8c1febe2a44c0590c4.png"
+                    alt=""
+                  />
+                  <a href="https://misis.ru/" class="edu__card-heading">
+                    Университет науки и технологий МИСИС
+                  </a>
+                  <p class="edu__card-text">от 220000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 200</p>
+                    <p class="edu__card-l-text">961 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 190</p>
+                    <p class="edu__card-l-text">460 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/74_74_0_0_auto/img_28af8cf09887b63357d9e59f88f83e06.png"
+                    alt=""
+                  />
+                  <a href="https://rosnou.ru/" class="edu__card-heading">
+                    Российский новый университет
+                  </a>
+                  <p class="edu__card-text">от 42000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 162</p>
+                    <p class="edu__card-l-text">90 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 115</p>
+                    <p class="edu__card-l-text">2915 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_3b155ecdd05c5805e74cd6abf338b03b.png"
+                    alt=""
+                  />
+                  <a href="https://bmstu.ru/" class="edu__card-heading">
+                    Московский государственный технический университет им. Н. Э.
+                    Баумана
+                  </a>
+                  <p class="edu__card-text">от 270119 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 148</p>
+                    <p class="edu__card-l-text">3468</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 136</p>
+                    <p class="edu__card-l-text">1881 мест</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab__body-item">
+              <div class="tab__body-item-list">
+                <div class="edu__card">
+                  <img
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_59c422315ac522445501ae5d0644ea99.png"
+                    alt=""
+                  />
+                  <a href="https://kubsau.ru/" class="edu__card-heading">
+                    Кубанский государственный аграрный университет
+                  </a>
+                  <p class="edu__card-text">от 13800 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 154</p>
+                    <p class="edu__card-l-text">1211 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 141</p>
+                    <p class="edu__card-l-text">1755 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="50px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_0348eaaef708de5130e99528123b055b.png"
+                    alt=""
+                  />
+                  <a href="https://www.kubsu.ru/" class="edu__card-heading">
+                    Кубанский государственный университет
+                  </a>
+                  <p class="edu__card-text">от 42200 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 150</p>
+                    <p class="edu__card-l-text">2155 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 115</p>
+                    <p class="edu__card-l-text">3036 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_14a3b5432aaa828d7f83b3489599d6fc.jpg"
+                    alt=""
+                  />
+                  <a href="https://kubstu.ru/" class="edu__card-heading">
+                    Кубанский государственный технический университет
+                  </a>
+                  <p class="edu__card-text">от 53900 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 123</p>
+                    <p class="edu__card-l-text">1128 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 131</p>
+                    <p class="edu__card-l-text">1711 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_077326ac3760d7a2c700d52773826f55.png"
+                    alt=""
+                  />
+                  <a href="http://www.agpu.net/" class="edu__card-heading">
+                    Армавирский государственный педагогический университет
+                  </a>
+                  <p class="edu__card-text">от 38500 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 124</p>
+                    <p class="edu__card-l-text">800 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 115</p>
+                    <p class="edu__card-l-text">1370 мест</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab__body-item">
+              <div class="tab__body-item-list">
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="50px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_3f555ecf071527ed160d6b7ed642a725.png"
+                    alt=""
+                  />
+                  <a href="https://www.nstu.ru/" class="edu__card-heading">
+                    Новосибирский государственный технический университет
+                  </a>
+                  <p class="edu__card-text">от 13000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 122</p>
+                    <p class="edu__card-l-text">2311 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 121</p>
+                    <p class="edu__card-l-text">2955 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_bbc042589e81429f10f84182a97cdfb4.png"
+                    alt=""
+                  />
+                  <a href="https://sibsutis.ru/" class="edu__card-heading">
+                    Сибирский государственный университет телекоммуникаций и
+                    информатики
+                  </a>
+                  <p class="edu__card-text">от 51180 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 113</p>
+                    <p class="edu__card-l-text">1066 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 99</p>
+                    <p class="edu__card-l-text">899 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_edbd662d185abe6e70c41fd1ed3c1b49.png"
+                    alt=""
+                  />
+                  <a href="https://www.nsu.ru/n/" class="edu__card-heading">
+                    Новосибирский национальный исследовательский государственный
+                    университет
+                  </a>
+                  <p class="edu__card-text">от 118000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 161</p>
+                    <p class="edu__card-l-text">1360 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 152</p>
+                    <p class="edu__card-l-text">738 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="34px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_131fb4bb5ed723c2fff046ea4935587f.png"
+                    alt=""
+                  />
+                  <a href="https://nsau.edu.ru/" class="edu__card-heading">
+                    Новосибирский государственный аграрный университет
+                  </a>
+                  <p class="edu__card-text">от 32364 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 151</p>
+                    <p class="edu__card-l-text">1096 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 109</p>
+                    <p class="edu__card-l-text">807 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="34px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_e3f8d31fd17f530f966f481619c4a774.png"
+                    alt=""
+                  />
+                  <a href="https://nsuem.ru/" class="edu__card-heading">
+                    Новосибирский государственный университет экономики и
+                    управления - НИНХ
+                  </a>
+                  <p class="edu__card-text">от 60320 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 184</p>
+                    <p class="edu__card-l-text">323 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 123</p>
+                    <p class="edu__card-l-text">2364 мест</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab__body-item">
+              <div class="tab__body-item-list">
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_6d09cec1fcd034ef742c6029dbe88347.png"
+                    alt=""
+                  />
+                  <a href="http://www.psu.ru/" class="edu__card-heading">
+                    Пермский государственный национальный исследовательский
+                    университет
+                  </a>
+                  <p class="edu__card-text">от 51500 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 122</p>
+                    <p class="edu__card-l-text">1722 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 113</p>
+                    <p class="edu__card-l-text">2179 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_8aee64b47faf24642ff338e9aacd3ce7.png"
+                    alt=""
+                  />
+                  <a href="https://pstu.ru/" class="edu__card-heading">
+                    Пермский национальный исследовательский политехнический
+                    университет
+                  </a>
+                  <p class="edu__card-text">от 62000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 126</p>
+                    <p class="edu__card-l-text">2270 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 109</p>
+                    <p class="edu__card-l-text">1986 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_c47c131076ceb92763f6e9441754e0b8.png"
+                    alt=""
+                  />
+                  <a href="https://pgsha.ru/today/" class="edu__card-heading">
+                    Пермский государственный аграрно-технологический университет
+                    имени академика Д.Н. Прянишникова
+                  </a>
+                  <p class="edu__card-text">от 43800 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 108</p>
+                    <p class="edu__card-l-text">688 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 85</p>
+                    <p class="edu__card-l-text">1350 мест</p>
+                  </div>
+                </div>
+                <div class="edu__card">
+                  <img
+                    width="74px"
+                    height="74px"
+                    src="https://vuzopedia.ru/storage/app/resources/resize/99_99_0_0_auto/img_0333f9c613a1b7098ff23bd5cf7dc251.png"
+                    alt=""
+                  />
+                  <a href="https://www.pspu.ru/" class="edu__card-heading">
+                    Пермский государственный гуманитарно-педадогический
+                    университет
+                  </a>
+                  <p class="edu__card-text">от 57000 ₽</p>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 138</p>
+                    <p class="edu__card-l-text">750 мест</p>
+                  </div>
+                  <div class="edu__card-group">
+                    <p class="edu__card-text">от 123</p>
+                    <p class="edu__card-l-text">559 мест</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="curs">
+        <div class="wrapper curs__wrapper">
+          <h2 class="curs__heading">Поиск курсов</h2>
+          <ul class="curs__list">
+            <li class="curs__card">
+              <img
+                class="curs__img"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+
+              <a class="curs__btn" href="https://skillfactory.ru/">Перейти</a>
+            </li>
+            <li class="curs__card">
+              <img
+                class="curs__img"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+
+              <a class="curs__btn" href="https://skillbox.ru/">Перейти</a>
+            </li>
+            <li class="curs__card">
+              <img
+                class="curs__img"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+
+              <a class="curs__btn" href="https://netology.ru/">Перейти</a>
+            </li>
+            <li class="curs__card">
+              <img
+                class="curs__img"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+
+              <a class="curs__btn" href="https://eduson.academy/">Перейти</a>
+            </li>
+            <li class="curs__card">
+              <img
+                class="curs__img"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+
+              <a class="curs__btn" href="https://productstar.ru/">Перейти</a>
+            </li>
+            <li class="curs__card">
+              <img
+                class="curs__img"
+                src="data:image/png;base64,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"
+                alt=""
+              />
+
+              <a class="curs__btn" href="https://gb.ru/">Перейти</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section data-aos="fade-up" class="footer">
+        <div class="wrapper footer__wrapper">
+          <div class="footer__logo">
+            <a
+              class="footer__logo-link"
+              href="http://127.0.0.1:5501/index.html"
+            >
+              <img
+                width="150px"
+                height="110px"
+                src="./assets/img/proforient-high-resolution-logo.png"
+                alt=""
+              />
+            </a>
+            <p class="footer__logo-text">
+              © 2023-2024 ПрофОриент™. Все права защищены
+            </p>
+          </div>
+          <div class="footer__list">
+            <h3 class="footer__heading">Ссылки</h3>
+            <nav class="footer__nav">
+              <a
+                class="footer__nav-link"
+                href="http://127.0.0.1:5501/index.html"
+                >Главная</a
+              >
+              <a class="footer__nav-link" href="./index2.html"
+                >Программирование и специализации</a
+              >
+              <a class="footer__nav-link" href="./index3.html">Образование</a>
+              <a class="footer__nav-link" href="./index4.html">Опросы</a>
+            </nav>
+          </div>
+          <div class="footer__list">
+            <h3 class="footer__heading">Есть вопросы?</h3>
+            <p class="footer__subtext">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.65589 12.7108C6.75752 12.7901 6.88277 12.8333 7.01172 12.8333C7.14067 12.8333 7.26592 12.7901 7.36755 12.7108C8.47589 11.8649 11.7484 9.10576 11.7309 5.89159C11.7309 3.28993 9.61339 1.16659 7.00589 1.16659C4.39839 1.16659 2.28089 3.28409 2.28089 5.88576C2.27505 9.05326 5.55339 11.8591 6.65589 12.7108Z"
+                  stroke="white"
+                  stroke-miterlimit="10"
+                />
+                <path
+                  d="M5.76256 4.59581C6.09075 4.26763 6.53587 4.08325 7 4.08325C7.46413 4.08325 7.90925 4.26763 8.23744 4.59581C8.56563 4.924 8.75 5.36912 8.75 5.83325C8.75 6.29738 8.56563 6.7425 8.23744 7.07069C7.90925 7.39888 7.46413 7.58325 7 7.58325C6.53587 7.58325 6.09075 7.39888 5.76256 7.07069C5.43437 6.7425 5.25 6.29738 5.25 5.83325C5.25 5.36912 5.43437 4.924 5.76256 4.59581Z"
+                  stroke="white"
+                  stroke-miterlimit="10"
+                />
+              </svg>
+              г.Красноярск, 9 мая
+            </p>
+            <p class="footer__subtext">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_753_998)">
+                  <path
+                    d="M12.8157 10.6926C12.8157 10.9026 12.769 11.1184 12.6698 11.3284C12.5707 11.5384 12.4423 11.7367 12.2732 11.9234C11.9873 12.2384 11.6723 12.4659 11.3165 12.6117C10.9665 12.7576 10.5873 12.8334 10.179 12.8334C9.584 12.8334 8.94817 12.6934 8.27734 12.4076C7.6065 12.1217 6.93567 11.7367 6.27067 11.2526C5.5929 10.7568 4.95332 10.2108 4.35734 9.61925C3.76745 9.02542 3.2234 8.38776 2.72984 7.71175C2.2515 7.04675 1.8665 6.38175 1.5865 5.72258C1.3065 5.05758 1.1665 4.42175 1.1665 3.81508C1.1665 3.41841 1.2365 3.03925 1.3765 2.68925C1.5165 2.33341 1.73817 2.00675 2.04734 1.71508C2.42067 1.34758 2.829 1.16675 3.26067 1.16675C3.424 1.16675 3.58734 1.20175 3.73317 1.27175C3.88484 1.34175 4.019 1.44675 4.124 1.59841L5.47734 3.50591C5.58234 3.65175 5.65817 3.78591 5.71067 3.91425C5.76317 4.03675 5.79234 4.15925 5.79234 4.27008C5.79234 4.41008 5.7515 4.55008 5.66984 4.68425C5.594 4.81841 5.48317 4.95841 5.34317 5.09841L4.89984 5.55925C4.83567 5.62341 4.8065 5.69925 4.8065 5.79258C4.8065 5.83925 4.81234 5.88008 4.824 5.92675C4.8415 5.97341 4.859 6.00841 4.87067 6.04341C4.97567 6.23591 5.1565 6.48675 5.41317 6.79008C5.67567 7.09341 5.95567 7.40258 6.259 7.71175C6.574 8.02091 6.87734 8.30675 7.1865 8.56925C7.48984 8.82591 7.74067 9.00091 7.939 9.10591C7.96817 9.11758 8.00317 9.13508 8.044 9.15258C8.09067 9.17008 8.13734 9.17591 8.18984 9.17591C8.289 9.17591 8.36484 9.14091 8.429 9.07675L8.87234 8.63925C9.01817 8.49341 9.15817 8.38258 9.29234 8.31258C9.4265 8.23091 9.56067 8.19008 9.7065 8.19008C9.81734 8.19008 9.934 8.21341 10.0623 8.26591C10.1907 8.31841 10.3248 8.39425 10.4707 8.49341L12.4015 9.86425C12.5532 9.96925 12.6582 10.0917 12.7223 10.2376C12.7807 10.3834 12.8157 10.5292 12.8157 10.6926Z"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_753_998">
+                    <rect width="14" height="14" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              +7 (XXX) 994-14-97
+            </p>
+            <p class="footer__subtext">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.9165 11.9584H4.08317C2.33317 11.9584 1.1665 11.0834 1.1665 9.04175V4.95841C1.1665 2.91675 2.33317 2.04175 4.08317 2.04175H9.9165C11.6665 2.04175 12.8332 2.91675 12.8332 4.95841V9.04175C12.8332 11.0834 11.6665 11.9584 9.9165 11.9584Z"
+                  stroke="white"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9.91683 5.25L8.091 6.70833C7.49016 7.18667 6.50433 7.18667 5.9035 6.70833L4.0835 5.25"
+                  stroke="white"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              zaharslizunov@mail.ru
+            </p>
+          </div>
+          <div class="footer__list">
+            <h3 class="footer__heading">Мы в соцсетях</h3>
+            <div class="footer__socials">
+              <a class="footer__socials-link" href="#"
+                ><svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M3.39994 3.4L3.04469 3.0481L3.0489 3.04395L3.39994 3.4ZM3.39994 20.6L3.04804 20.9552L3.04389 20.951L3.39994 20.6ZM20.5999 20.6L20.9552 20.9519L20.951 20.9561L20.5999 20.6ZM20.5999 3.4L20.9518 3.04475L20.956 3.04896L20.5999 3.4ZM5.37327 8.08667L4.87337 8.09692C4.87062 7.96256 4.92206 7.83275 5.01611 7.73676C5.11016 7.64076 5.23888 7.58667 5.37327 7.58667V8.08667ZM12.9066 16.4067H13.4066C13.4066 16.6828 13.1827 16.9067 12.9066 16.9067V16.4067ZM12.9066 13.4333H12.4066C12.4066 13.2921 12.4663 13.1575 12.571 13.0627C12.6757 12.9679 12.8156 12.9218 12.9562 12.9358L12.9066 13.4333ZM16.3533 16.4067V16.9067C16.1359 16.9067 15.9435 16.7663 15.8772 16.5593L16.3533 16.4067ZM18.7199 16.4067L19.2026 16.2762C19.2432 16.4264 19.2116 16.587 19.117 16.7106C19.0223 16.8342 18.8756 16.9067 18.7199 16.9067V16.4067ZM15.2999 12.2333L15.0771 12.681C14.9142 12.5998 14.8081 12.4365 14.8004 12.2546C14.7926 12.0727 14.8844 11.901 15.0399 11.8063L15.2999 12.2333ZM17.1928 10.461L17.6019 10.7486L17.1928 10.461ZM18.2199 8.08V7.58C18.3701 7.58 18.5123 7.6475 18.6073 7.76385C18.7023 7.88019 18.7399 8.03306 18.7098 8.18019L18.2199 8.08ZM16.0733 8.08L15.5921 7.94418C15.6529 7.72876 15.8494 7.58 16.0733 7.58V8.08ZM12.9066 11.3733L12.9596 11.8705C12.8186 11.8856 12.6778 11.84 12.5723 11.7452C12.4668 11.6503 12.4066 11.5152 12.4066 11.3733H12.9066ZM12.9066 8.08667V7.58667C13.1827 7.58667 13.4066 7.81053 13.4066 8.08667H12.9066ZM10.7533 8.08667H10.2533C10.2533 7.81053 10.4771 7.58667 10.7533 7.58667V8.08667ZM10.7533 13.8467H11.2533C11.2533 14.0006 11.1823 14.146 11.061 14.2408C10.9396 14.3355 10.7814 14.3691 10.632 14.3317L10.7533 13.8467ZM7.6666 8.08667V7.58667C7.939 7.58667 8.16127 7.80471 8.16651 8.07705L7.6666 8.08667ZM1.49994 11.6C1.49994 9.35073 1.49889 7.61455 1.67936 6.26617C1.86175 4.90342 2.23763 3.8629 3.04471 3.04813L3.75516 3.75187C3.16225 4.35043 2.83813 5.14658 2.67052 6.39883C2.50099 7.66545 2.49994 9.3226 2.49994 11.6H1.49994ZM1.49994 12.4V11.6H2.49994V12.4H1.49994ZM3.04389 20.951C2.23759 20.1332 1.86176 19.0917 1.67936 17.7288C1.49889 16.3805 1.49994 14.646 1.49994 12.4H2.49994C2.49994 14.674 2.50099 16.3295 2.67052 17.5962C2.83811 18.8483 3.16229 19.6468 3.75599 20.249L3.04389 20.951ZM11.5999 22.5C9.35067 22.5 7.61449 22.5011 6.26611 22.3206C4.90335 22.1382 3.86284 21.7623 3.04807 20.9552L3.75181 20.2448C4.35037 20.8377 5.14652 21.1618 6.39877 21.3294C7.66539 21.4989 9.32254 21.5 11.5999 21.5V22.5ZM12.3999 22.5H11.5999V21.5H12.3999V22.5ZM20.951 20.9561C20.1332 21.7624 19.0916 22.1382 17.7288 22.3206C16.3804 22.5011 14.6459 22.5 12.3999 22.5V21.5C14.674 21.5 16.3295 21.4989 17.5961 21.3294C18.8483 21.1618 19.6467 20.8376 20.2489 20.2439L20.951 20.9561ZM22.4999 12.4C22.4999 14.6493 22.501 16.3855 22.3205 17.7338C22.1381 19.0966 21.7623 20.1371 20.9552 20.9519L20.2447 20.2481C20.8376 19.6496 21.1618 18.8534 21.3294 17.6012C21.4989 16.3345 21.4999 14.6774 21.4999 12.4H22.4999ZM22.4999 11.6V12.4H21.4999V11.6H22.4999ZM20.956 3.04896C21.7623 3.86678 22.1381 4.90834 22.3205 6.27117C22.501 7.61954 22.4999 9.35404 22.4999 11.6H21.4999C21.4999 9.32596 21.4989 7.67046 21.3294 6.40383C21.1618 5.15166 20.8376 4.35322 20.2439 3.75104L20.956 3.04896ZM12.3999 1.5C14.6492 1.5 16.3854 1.49895 17.7338 1.67942C19.0965 1.86181 20.137 2.23769 20.9518 3.04478L20.2481 3.75522C19.6495 3.16231 18.8534 2.83819 17.6011 2.67058C16.3345 2.50105 14.6773 2.5 12.3999 2.5V1.5ZM11.5999 1.5H12.3999V2.5H11.5999V1.5ZM3.0489 3.04395C3.86672 2.23765 4.90828 1.86183 6.27111 1.67942C7.61948 1.49895 9.35398 1.5 11.5999 1.5V2.5C9.3259 2.5 7.67039 2.50105 6.40377 2.67058C5.1516 2.83817 4.35316 3.16235 3.75098 3.75605L3.0489 3.04395ZM12.6399 16.9067C10.2377 16.9067 8.30046 16.0798 6.95797 14.5232C5.62543 12.9782 4.92825 10.7719 4.87337 8.09692L5.87317 8.07641C5.92496 10.6014 6.5811 12.5551 7.71523 13.8701C8.83941 15.1735 10.4822 15.9067 12.6399 15.9067V16.9067ZM12.6466 16.9067H12.6399V15.9067H12.6466V16.9067ZM12.9066 16.9067H12.6466V15.9067H12.9066V16.9067ZM13.4066 13.4333V16.4067H12.4066V13.4333H13.4066ZM15.8772 16.5593C15.4192 15.1312 14.2955 14.0741 12.857 13.9309L12.9562 12.9358C14.8643 13.1259 16.274 14.5221 16.8294 16.254L15.8772 16.5593ZM18.7199 16.9067H16.3533V15.9067H18.7199V16.9067ZM17.8441 13.6364C18.4784 14.4104 18.9414 15.3101 19.2026 16.2762L18.2373 16.5372C18.013 15.7076 17.6154 14.9349 17.0706 14.2703L17.8441 13.6364ZM15.5227 11.7857C16.4186 12.2316 17.2098 12.8624 17.8441 13.6364L17.0706 14.2703C16.5259 13.6056 15.8465 13.0639 15.0771 12.681L15.5227 11.7857ZM17.6019 10.7486C17.0599 11.5195 16.3648 12.1703 15.56 12.6604L15.0399 11.8063C15.7273 11.3877 16.3209 10.8318 16.7838 10.1735L17.6019 10.7486ZM18.7098 8.18019C18.521 9.10338 18.1438 9.97773 17.6019 10.7486L16.7838 10.1735C17.2467 9.51507 17.5688 8.76831 17.7301 7.97982L18.7098 8.18019ZM16.0733 7.58H18.2199V8.58H16.0733V7.58ZM12.8536 10.8762C13.3501 10.8232 13.9226 10.4996 14.4449 9.94981C14.9606 9.40692 15.3817 8.68939 15.5921 7.94418L16.5545 8.21582C16.2981 9.12394 15.7926 9.98308 15.17 10.6385C14.5539 11.287 13.7765 11.7834 12.9596 11.8705L12.8536 10.8762ZM13.4066 8.08667V11.3733H12.4066V8.08667H13.4066ZM10.7533 7.58667H12.9066V8.58667H10.7533V7.58667ZM10.2533 13.8467V8.08667H11.2533V13.8467H10.2533ZM8.16651 8.07705C8.23719 11.7526 9.83535 13.1018 10.8745 13.3616L10.632 14.3317C9.00453 13.9249 7.24268 12.0474 7.1667 8.09628L8.16651 8.07705ZM5.37327 7.58667H7.6666V8.58667H5.37327V7.58667Z"
+                    fill="#ffffff"
+                  />
+                </svg>
+              </a>
+              <a class="footer__socials-link" href="#">
+                <svg
+                  width="20px"
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M21.997 12C21.997 17.5228 17.5198 22 11.997 22C6.47415 22 1.99699 17.5228 1.99699 12C1.99699 6.47715 6.47415 2 11.997 2C17.5198 2 21.997 6.47715 21.997 12ZM12.3553 9.38244C11.3827 9.787 9.43876 10.6243 6.52356 11.8944C6.05018 12.0827 5.8022 12.2669 5.77962 12.4469C5.74147 12.7513 6.12258 12.8711 6.64155 13.0343C6.71214 13.0565 6.78528 13.0795 6.86026 13.1038C7.37085 13.2698 8.05767 13.464 8.41472 13.4717C8.7386 13.4787 9.10009 13.3452 9.49918 13.0711C12.2229 11.2325 13.629 10.3032 13.7172 10.2831C13.7795 10.269 13.8658 10.2512 13.9243 10.3032C13.9828 10.3552 13.977 10.4536 13.9708 10.48C13.9331 10.641 12.4371 12.0318 11.6629 12.7515C11.4216 12.9759 11.2504 13.135 11.2154 13.1714C11.137 13.2528 11.0571 13.3298 10.9803 13.4038C10.506 13.8611 10.1502 14.204 11 14.764C11.4083 15.0331 11.7351 15.2556 12.0611 15.4776C12.4171 15.7201 12.7722 15.9619 13.2317 16.2631C13.3487 16.3398 13.4605 16.4195 13.5694 16.4971C13.9837 16.7925 14.3559 17.0579 14.8158 17.0155C15.083 16.991 15.359 16.7397 15.4992 15.9903C15.8305 14.2193 16.4817 10.382 16.6322 8.80081C16.6454 8.66228 16.6288 8.48498 16.6154 8.40715C16.6021 8.32932 16.5743 8.21842 16.4731 8.13633C16.3533 8.03911 16.1683 8.01861 16.0856 8.02C15.7095 8.0267 15.1324 8.22735 12.3553 9.38244Z"
+                    stroke="#ffffff"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./scripts/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
