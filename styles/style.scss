@@ -411,6 +411,11 @@ a {
     flex-direction: column;
     gap: 10px;
   }
+  &__list-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 
   &__heading {
     color: var(--Text_Primary, #99abc1);
@@ -930,7 +935,7 @@ a {
       display: none;
     }
     &__logo {
-      margin-left: 155px;
+      margin-left: 145px;
     }
     &__burger {
       display: inline-block;
@@ -958,5 +963,198 @@ a {
     }
   }
   .mobile-menu {
+  }
+  .info {
+    &__card {
+      padding: 26px;
+      max-width: 450px;
+    }
+  }
+  .up {
+    background-image: none;
+    &__step::after {
+      background-image: none;
+    }
+    &__step:nth-child(even)::after {
+      background-image: none;
+    }
+    &__step:nth-child(even) {
+      background-image: none;
+      margin-left: 0px;
+      transform: translateX(0px);
+    }
+    &__step-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+    }
+    &__step {
+      display: flex;
+      width: 350px;
+      transform: translateX(0px);
+      padding: 4px 20px 4px 4px;
+      align-items: center;
+      gap: 16px;
+      border-radius: 100px;
+      background: var(--surface-secondary, #1f2128);
+      position: sticky;
+    }
+  }
+  .info2 {
+    .info__card {
+      margin-right: 22px;
+    }
+  }
+  .footer {
+    &__logo {
+      display: none;
+    }
+    &__wrapper {
+      flex-direction: column;
+      justify-content: start;
+      align-items: start;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      gap: 15px;
+    }
+  }
+  .tab {
+    &__heading {
+      font-size: 50px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 60px; /* 150% */
+      background: var(
+        --gradient,
+        linear-gradient(140deg, #ffffff 14.99%, #c1dcff 75%)
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-left: 30px;
+    }
+    &__list {
+      display: flex;
+      gap: 5px;
+      margin-top: 30px;
+    }
+    &__content {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      position: sticky;
+      left: 0;
+      top: 32px;
+    }
+
+    &__btn {
+      background-color: #1f2128;
+      width: 200px;
+      height: 60px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+      color: var(--Text_Primary, #ffffff);
+      font-size: 13px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 24px; /* 150% */
+      cursor: pointer;
+      transition: 0.5s ease-out;
+      &_active {
+        border: 1px solid #99abc1;
+      }
+    }
+    &__btn:hover {
+      box-shadow: black 10px 20px 30px -20px;
+    }
+    &__subheading {
+      color: var(--Text_Primary, #b2bbc6);
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      margin-bottom: 10px;
+      margin-top: 10px;
+    }
+    &__a {
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 150% */
+      color: #548ad1;
+      text-decoration: underline;
+    }
+    &__hhru {
+      background-color: #292932;
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      gap: 4px;
+    }
+    &__body {
+      background-color: #1f2128;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 40px;
+      position: static;
+      border-top-right-radius: 25px;
+      border-bottom-right-radius: 25px;
+      border-bottom-left-radius: 25px;
+    }
+    &__body-item-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    &__body-item {
+      display: none;
+      &_active {
+        display: inline-block;
+      }
+    }
+    &__subtext {
+      color: var(--Text_Primary, #ffffff);
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px; /* 150% */
+      max-width: 945px;
+    }
+  }
+  .edu {
+    &__body-marking {
+      display: none;
+    }
+    &__card-text {
+      display: none;
+    }
+    &__card-group {
+      display: none;
+    }
+    &__acardion {
+      border-radius: 18px;
+      display: flex;
+      padding: 24px 32px;
+      align-items: start;
+      align-self: stretch;
+      width: 100%;
+      flex-direction: column;
+      gap: 16px;
+      cursor: pointer;
+      position: absolute;
+      margin-bottom: 100px;
+      transform: translateX(26px) translateY(0px);
+    }
+    &__body-item {
+      margin-top: 100px;
+    }
+    &__wrapper {
+      gap: 100;
+    }
   }
 }
